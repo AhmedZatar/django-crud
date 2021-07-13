@@ -30,13 +30,6 @@ class SnakesTests(TestCase):
         )
         self.assertEqual(response.status_code, 200)
 
-    def test_detail_page(self):
-        response= self.client.get(
-            reverse('snack_detail',args='1') ,
-            {'name':'Hummus', 'purchaser':self.user , 'description':'afasgishjgoi hgoiseghiogsioogsegoi'},
-        )
-        self.assertEqual(response.status_code, 200)
-
     def test_create_page(self):
         response= self.client.get(
             reverse('snack_create') ,
@@ -51,7 +44,7 @@ class SnakesTests(TestCase):
         )
         self.assertEqual(response.status_code, 200)
 
-    def test_update_page(self):
+    def test_delete_page(self):
         response= self.client.get(
             reverse('snack_delete',args='1') ,
             {'name':'Hummus', 'purchaser':self.user , 'description':'afasgishjgoi hgoiseghiogsioogsegoi'},
