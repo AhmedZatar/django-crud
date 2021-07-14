@@ -1,0 +1,1 @@
+[https://github.com/AhmedZatar/django-crud/pull/1](https://github.com/AhmedZatar/django-crud/pull/1)
